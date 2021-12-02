@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100;400;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bitter', serif;
+    width: 100%;
+}
+
+/* ====================================== */
+
+/* Variables */
+:root {
+    /* Colours */
+    --colour-1: black;
+    --colour-2: white;
+    --colour-3: rgb(175, 18, 18);
+    
+    /* Font Sizes */
+    --small-font: 2rem;
+    --medium-font: 5rem;
+    --large-font: 8rem;
+
+    /* Padding */
+    --extra-small-padding: 0.5em;
+    --small-padding: 1em;
+    --medium-padding: 3em;
+    --large-padding: 6em;
+
+    /* Margin */
+    --small-margin: 1em;
+    --medium-margin: 3em;
+    --large-margin: 6em;
+}
+
+/* ====================================== */
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--colour-1);
+    color: var(--colour-1);
+    width: 100%;
+    height: auto;
+    padding: var(--medium-padding) 0;
+
+    position: sticky;
+}
+
+.navbar .website-branding {
+    display: flex;
+    flex-direction: column;
+    gap: var(--small-margin);
+    margin: var(--small-margin) 0;
+}
+
+.navbar .website-branding h3 {
+    color: var(--colour-2);
+    font-size: var(--medium-font);
+}
+
+.navbar .nav-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: var(--small-margin);
+    margin: var(--small-margin) 0;
+}
+
+.navbar .nav-btn {
+    padding: var(--small-padding) var(--medium-padding);
+    font-family: 'Bitter', serif;
+    color: var(--colour-2);
+    border-color: var(--colour-2);
+    background-color: transparent;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+/* Welcome Banner */
+.welcome-banner {
+    position: relative;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-banner img {
+    width: 100%;
+}
+
+.welcome-banner .welcome-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
