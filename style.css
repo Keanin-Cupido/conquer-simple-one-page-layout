@@ -10,6 +10,10 @@ body {
     width: 100%;
 }
 
+img {
+    width: 100%;
+}
+
 /* ====================================== */
 
 /* Variables */
@@ -18,8 +22,10 @@ body {
     --colour-1: black;
     --colour-2: white;
     --colour-3: rgb(175, 18, 18);
+    --colour-4: rgb(212, 212, 212);
     
     /* Font Sizes */
+    --extra-small-font: 0.75rem;
     --small-font: 2rem;
     --medium-font: 5rem;
     --large-font: 8rem;
@@ -31,9 +37,11 @@ body {
     --large-padding: 6em;
 
     /* Margin */
+    --extra-small-margin: 0.5em;
     --small-margin: 1em;
     --medium-margin: 3em;
     --large-margin: 6em;
+    --extra-large-margin: 12em;
 }
 
 /* ====================================== */
@@ -90,16 +98,130 @@ body {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-
-.welcome-banner img {
-    width: 100%;
 }
 
 .welcome-banner .welcome-text {
     display: flex;
     flex-direction: column;
     position: absolute;
+    margin-top: var(--extra-large-margin);
+}
+
+.welcome-text h1 {
+    font-size: var(--large-font);
+    font-weight: 100;
+    color: var(--colour-1);
+}
+
+.welcome-text p {
+    font-size: var(--small-font);
+    color: var(--colour-2)
+}
+
+/* Section 1 */
+.section {
+    padding: var(--large-padding);
+    display: flex;
+    flex-direction: column;
+    gap: var(--medium-margin);
+}
+
+.section .row-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: var(--small-margin);
+}
+
+.section .row-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: var(--small-margin);
+}
+
+/* Cards */
+
+.card-type-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--small-margin);
+    width: 25%;
+
+    background-color: var(--colour-4);
+    border-width: 1px;
+    border-color: var(--colour-1);
+    border-radius: 5px;
+}
+
+.card-type-1 .card-text {
+    padding: var(--small-padding) var(--medium-padding);
+}
+
+.card-type-1 button, .card-type-2 button  {
+    margin: 0 0 var(--medium-padding) 0;
+}
+
+.card-type-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--small-margin);
+    width: 40%;
+}
+
+.card-type-2 .card-text {
+    padding: var(--small-padding) var(--medium-padding);
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: var(--colour-4);
+    padding: var(--large-padding);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form .form-block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--medium-margin);
+}
+
+.contact-form .form-block h2 {
+    font-size: var(--small-font);
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--large-padding);
+    background-color: var(--colour-1);
+    color: var(--colour-2);
+}
+
+.footer .top-area {
+    display: flex;
+    flex-direction: column;
+    gap: var(--small-margin);
+}
+
+.section-divider {
+    margin: var(--large-margin);
+}
+
+.footer .xtrasmall-p-tag {
+    font-size: var(--extra-small-font);
 }
