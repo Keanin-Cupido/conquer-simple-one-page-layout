@@ -242,6 +242,10 @@ img {
     padding: var(--small-padding) var(--medium-padding);
 }
 
+.card-text p {
+    margin-top: var(--small-margin);
+}
+
 /* Info Section */
 .info-banner {
     height: 400px;
@@ -286,6 +290,17 @@ img {
     align-items: center;
 }
 
+.form-block-input {
+    display: flex;
+    flex-direction: row;
+    gap: var(--small-margin);
+}
+
+.form-block-input .left {
+    display: flex;
+    flex-direction: column;
+}
+
 .contact-form .form-block {
     display: flex;
     flex-direction: column;
@@ -294,6 +309,15 @@ img {
 
 .contact-form .form-block h2 {
     font-size: var(--small-font);
+}
+
+input {
+    border: none;
+    padding: 5px;
+}
+
+.textarea {
+    padding: var(--medium-padding);
 }
 
 /* Footer */
