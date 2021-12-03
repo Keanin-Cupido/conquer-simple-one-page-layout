@@ -22,7 +22,7 @@ img {
     --colour-1: black;
     --colour-2: white;
     --colour-3: rgb(175, 18, 18);
-    --colour-4: rgb(212, 212, 212);
+    --colour-4: rgb(219, 219, 219);
     
     /* Font Sizes */
     --extra-small-font: 0.75rem;
@@ -49,15 +49,15 @@ img {
 /* Navbar */
 .navbar {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
 
     background-color: var(--colour-1);
     color: var(--colour-1);
     width: 100%;
     height: auto;
-    padding: var(--medium-padding) 0;
+    padding: var(--small-padding) 0;
 
     position: sticky;
 }
@@ -77,18 +77,6 @@ img {
 .navbar .nav-buttons {
     display: flex;
     flex-direction: row;
-    gap: var(--small-margin);
-    margin: var(--small-margin) 0;
-}
-
-.navbar .nav-btn {
-    padding: var(--small-padding) var(--medium-padding);
-    font-family: 'Bitter', serif;
-    color: var(--colour-2);
-    border-color: var(--colour-2);
-    background-color: transparent;
-    border-radius: 5px;
-    border-width: 2px;
 }
 
 /* Welcome Banner */
@@ -127,18 +115,6 @@ img {
     color: var(--colour-2)
 }
 
-/* Section */
-.section {
-    padding: var(--medium-padding);
-    display: flex;
-    flex-direction: column;
-    gap: var(--medium-margin);
-
-    /* background-color: #FFE53B;
-    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%); */
-    
-}
-
 /* Button */
 .btn-grad, .btn-grad2 {
     background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%)
@@ -175,6 +151,19 @@ img {
    border-radius: 10px;
    display: block;
  }
+
+ 
+/* Section */
+.section {
+    padding: var(--large-padding);
+    display: flex;
+    flex-direction: column;
+    gap: var(--medium-margin);
+
+    /* background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%); */
+    
+}
 
 .section .row-1 {
     display: flex;
