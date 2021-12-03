@@ -111,7 +111,7 @@ img {
 
 .welcome-text h1 {
     font-size: var(--medium-font);
-    font-weight: 400;
+    font-weight: 800;
     color: var(--colour-2);
 }
 
@@ -142,7 +142,7 @@ img {
    background-position: right center; /* change the direction of the change here */
    color: #fff;
    text-decoration: none;
-
+    cursor: pointer;
  }
 
  .btn-grad2 {
@@ -201,6 +201,12 @@ img {
     border-width: 1px;
     border-color: var(--colour-1);
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-type-1 img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 
 .card-type-1 .card-text {
@@ -223,6 +229,13 @@ img {
     border-width: 1px;
     border-color: var(--colour-1);
     border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.card-type-2 img:hover {
+    transform: scale(1.025);
+    transition: 0.5s;
 }
 
 .card-type-2 .card-text {
