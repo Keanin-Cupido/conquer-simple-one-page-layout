@@ -58,8 +58,13 @@ img {
     width: 100%;
     height: auto;
     padding: var(--small-padding) 0;
+}
 
-    position: sticky;
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    z-index: 10;
 }
 
 .navbar .website-branding {
