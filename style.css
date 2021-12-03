@@ -93,12 +93,20 @@ img {
 
 /* Welcome Banner */
 .welcome-banner {
+    height: 600px;
+    
     position: relative;
     text-align: center;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.trim {
+    max-height: 50%;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .welcome-banner .welcome-text {
@@ -109,9 +117,9 @@ img {
 }
 
 .welcome-text h1 {
-    font-size: var(--large-font);
-    font-weight: 100;
-    color: var(--colour-1);
+    font-size: var(--medium-font);
+    font-weight: 400;
+    color: var(--colour-2);
 }
 
 .welcome-text p {
@@ -119,9 +127,9 @@ img {
     color: var(--colour-2)
 }
 
-/* Section 1 */
+/* Section */
 .section {
-    padding: var(--large-padding);
+    padding: var(--medium-padding);
     display: flex;
     flex-direction: column;
     gap: var(--medium-margin);
@@ -131,16 +139,16 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: var(--small-margin);
+    justify-content: center;
+    gap: var(--medium-margin);
 }
 
 .section .row-2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: var(--small-margin);
+    justify-content: center;
+    gap: var(--medium-margin);
 }
 
 /* Cards */
@@ -151,7 +159,8 @@ img {
     justify-content: center;
     align-items: center;
     gap: var(--small-margin);
-    width: 25%;
+    width: 250px;
+    height: auto;
 
     background-color: var(--colour-4);
     border-width: 1px;
@@ -173,11 +182,49 @@ img {
     justify-content: center;
     align-items: center;
     gap: var(--small-margin);
-    width: 40%;
+    width: auto;
+    
+    background-color: var(--colour-4);
+    border-width: 1px;
+    border-color: var(--colour-1);
+    border-radius: 5px;
 }
 
 .card-type-2 .card-text {
     padding: var(--small-padding) var(--medium-padding);
+}
+
+/* Info Section */
+.info-banner {
+    height: 400px;
+
+    position: relative;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-banner .info-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin: var(--large-margin);
+}
+
+.info-text h1 {
+    font-size: var(--small-font);
+    font-weight: 400;
+    color: var(--colour-2);
+}
+
+.info-text p {
+    margin-top: var(--small-margin);
+    font-size: var(--extra-small-fontsmall-font);
+    color: var(--colour-2)
 }
 
 /* Contact Form */
@@ -220,6 +267,9 @@ img {
 
 .section-divider {
     margin: var(--large-margin);
+    width: 95%;
+    height: 1px;
+    background-color: #ccc;
 }
 
 .footer .xtrasmall-p-tag {
